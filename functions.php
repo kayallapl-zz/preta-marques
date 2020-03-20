@@ -50,12 +50,13 @@ if ( ! function_exists( 'hamilton_setup' ) ) {
 		
 		// Add Jetpack Infinite Scroll support
 		add_theme_support( 'infinite-scroll', array(
-			'type'           => 'click',
+			'type'           => 'scroll',
 			'footer'		 => false,
 			'footer_widgets' => false,
 			'container'      => 'posts',
 			'render'         => false,
-			'posts_per_page' => false,
+			'wrapper'        => false,
+			'posts_per_page' => 32,
 		) );
 		
 		// Make the theme translation ready
@@ -517,6 +518,13 @@ if ( ! function_exists( 'hamilton_block_editor_styles' ) ) :
 	add_action( 'enqueue_block_editor_assets', 'hamilton_block_editor_styles', 1 );
 
 endif;
+
+function exclude_category( $query ) {
+	if ( $query->is_home() && $query->is_main_query() ) {
+		$query->set( 'cat', '-4' );
+	}
+}
+add_action( 'pre_get_posts', 'exclude_category' );
 
 
 ?>

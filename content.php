@@ -37,6 +37,9 @@ $image_style_attr = ( has_post_thumbnail() && ! post_password_required() ) ? ' s
 		<?php endif; ?>
 		
 		<h2><?php echo esc_html( get_the_title() ); ?></h2>
+		<?php if( get_field('miniature_description') ): ?>
+			<p class="miniature-description"><?php the_field('miniature_description'); ?></p>
+		<?php endif; ?>
 		<?php 
 		$category_detail=get_the_category($post->ID);//$post->ID
 		foreach($category_detail as $cd){

@@ -3,22 +3,22 @@
 <div class="section-inner">
 
 	<header class="page-header section-inner thin">
+		
+		<h1 class="title"><?php _e( 'Error 404', 'hamilton' ); ?></h1>
+	
+	</header><!-- .page-header -->
 
-		<div>
+	<div class="entry-content">
 
-			<h1 class="title"><?php _e( 'Error 404', 'hamilton' ); ?></h1>
-
-			<p><?php _e( "The page you're looking for could not be found. It may have been removed, renamed, or maybe it didn't exist in the first place.", "hamilton" ); ?></p>
-
-			<div class="meta">
-			
-				<a href="<?php echo esc_url( home_url() ); ?>"><?php _e( 'To the front page', 'hamilton' ); ?></a>
-			
-			</div>
-
+		<p><?php _e( "Página não encontrada. Pode ter sido removida, renomeada ou não existe.", "hamilton" ); ?></p>
+	
+		<div class="meta">
+	
+			<a href="<?php echo esc_url( home_url() ); ?>"><?php _e( 'Voltar para a home', 'hamilton' ); ?></a>
+	
 		</div>
 
-	</header><!-- .page-header -->
+	</div>		
 
 </div> <!-- .post -->
 
