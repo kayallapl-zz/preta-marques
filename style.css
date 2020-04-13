@@ -2829,6 +2829,37 @@ tbody > tr:nth-child(odd) { background: rgba( 0, 0, 0, 0.05 ); }
 /* -------------------------------------------------------------------------------- */
 
 
+main .post-14 header{
+	display: none;
+}
+
+main .post-14 .section-inner{
+	padding-top: 20vh;
+}
+
+main .post-14 .section-inner .home-title{
+	color: #f7413a;
+    font-weight: 600;
+	margin-bottom: 10px;
+}
+
+main .post-14 .section-inner .home-description{
+	letter-spacing: 2px;
+}
+
+body.page-id-14 .site-header .site-title{
+	opacity: 0 !important;
+}
+
+body.page-id-14 .site-header .site-title a{
+    user-select: none !important;
+}
+
+body.page-id-14 .site-header .site-title a:hover{
+	cursor: default !important;
+}
+/* 
+
 main .post-14{
 	width: 100%;
     height: 100vh;
@@ -2841,9 +2872,6 @@ main .post-14 .section-inner.thin{
     width: calc(100vw - 18vw);
 }
 
-main .post-14 header{
-	display: none;
-}
 
 main .post-14 .section-inner{
 	position: fixed;
@@ -2919,7 +2947,7 @@ button.owl-next svg, button.owl-prev svg{
 	pointer-events: none;
 	cursor: default;
 }
-
+ */
 /* -------------------------------------------------------------------------------- */
 /*	13.	About Page
 /* -------------------------------------------------------------------------------- */
